@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zn-CH">
+
+<head>
+    <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#414852"/>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata|Itim|Lobster.css">
+
+<link rel="stylesheet" href="/css/main.css?v=1.6.0.css">
+<link rel="icon" type="image/png" sizes="64x64" href="/images/favicon-64.png" /><link rel="icon" type="image/png" sizes="128x128" href="/images/favicon-128.png" /><link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180.png" /><link rel="mask-icon" color="red" href="/images/favicon.svg" /><script id="hexo.configurations">var NexT = window.NexT || {};var CONFIG = {"root":"/","scheme":"Gemini","version":"1.6.0","comments":{"active":null,"lazyload":false,"nav":null},"scroll":{"save":false}}</script>  <meta name="description" content="[TOC] 标题#是标题，随#号的多少逐级递增 段落格式文本 没有任何修饰就是普通的段落文字 或_包裹的字段是斜体(\包裹) *或_包裹的字段是斜体(_包裹) 两个*或_包裹的字段是粗体(*包裹) 两个*或_包裹的字段是粗体(_包裹) 上述两可以搭配使用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown">
+<meta property="og:url" content="http://yoursite.com/2020/02/27/markdown/index.html">
+<meta property="og:site_name" content="xr&#39;blog">
+<meta property="og:description" content="[TOC] 标题#是标题，随#号的多少逐级递增 段落格式文本 没有任何修饰就是普通的段落文字 或_包裹的字段是斜体(\包裹) *或_包裹的字段是斜体(_包裹) 两个*或_包裹的字段是粗体(*包裹) 两个*或_包裹的字段是粗体(_包裹) 上述两可以搭配使用">
+<meta property="og:locale" content="zn_CH">
+<meta property="og:image" content="https://s2.ax1x.com/2020/02/26/3adEyq.th.jpg">
+<meta property="article:published_time" content="2020-02-26T19:28:43.000Z">
+<meta property="article:modified_time" content="2020-02-26T19:49:27.650Z">
+<meta property="article:author" content="xiao rui">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.ax1x.com/2020/02/26/3adEyq.th.jpg">  <link rel="canonical" href="http://yoursite.com/2020/02/27/markdown/">  <title>markdown | xr'blog</title>  <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css" crossorigin="anonymous">  </head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+
+    
+  <header class="main-header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">xr&#39;blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+
+    
+    
+
+<li class="menu-item menu-item-home">
+  <a href="/" rel="section"><i class="menu-item-icon fas fa-home"></i>首頁</a></li>
+    
+    
+
+<li class="menu-item menu-item-archives">
+  <a href="/archives/" rel="section"><i class="menu-item-icon fas fa-archive"></i>歸檔</a></li>
+    
+
+    
+  </ul>
+</nav>
+</div>
+  </header>
+
+  <div class="flex-container">
+
+    <aside class="sidebar">
+
+  <div class="header-inner">
+    <div class="site-brand-wrapper">
+  <div class="site-meta">
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">xr&#39;blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+
+    
+    
+
+<li class="menu-item menu-item-home">
+  <a href="/" rel="section"><i class="menu-item-icon fas fa-home"></i>首頁</a></li>
+    
+    
+
+<li class="menu-item menu-item-archives">
+  <a href="/archives/" rel="section"><i class="menu-item-icon fas fa-archive"></i>歸檔</a></li>
+    
+
+    
+  </ul>
+</nav>
+  </div>
+
+  <div class="sidebar-inner">
+
+    
+
+    
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-toc sidebar-nav-active">
+        文章目錄
+      </li>
+      <li class="sidebar-nav-overview">
+        本站概覽
+      </li>
+    </ul>
+    
+
+    
+    <div class="post-toc-wrap sidebar-panel sidebar-panel-active">
+      <div class="post-toc"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#标题"><span class="nav-number">1.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#段落格式"><span class="nav-number">2.</span> <span class="nav-text">段落格式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#文本"><span class="nav-number">2.0.1.</span> <span class="nav-text">文本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分割线"><span class="nav-number">2.0.2.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#线条"><span class="nav-number">2.0.3.</span> <span class="nav-text">线条</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#脚注"><span class="nav-number">2.0.4.</span> <span class="nav-text">脚注</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表"><span class="nav-number">3.</span> <span class="nav-text">列表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#无序列表"><span class="nav-number">3.0.1.</span> <span class="nav-text">无序列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#有序列表"><span class="nav-number">3.0.2.</span> <span class="nav-text">有序列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#列表嵌套"><span class="nav-number">3.0.3.</span> <span class="nav-text">列表嵌套</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#区块"><span class="nav-number">4.</span> <span class="nav-text">区块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">5.</span> <span class="nav-text">代码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#普通代码"><span class="nav-number">5.0.1.</span> <span class="nav-text">普通代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码区块"><span class="nav-number">5.0.2.</span> <span class="nav-text">代码区块</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链接"><span class="nav-number">6.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片"><span class="nav-number">7.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表格"><span class="nav-number">8.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">9.</span> <span class="nav-text">其他</span></a></li></ol></div>
+    </div>
+    
+
+    <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview">
+  <div class="site-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    
+    <img class="site-author-image" itemprop="image" src="https://s2.ax1x.com/2020/02/26/3adEyq.jpg"
+      alt="xiao rui" />
+    
+    <p class="site-author-name" itemprop="name">xiao rui</p>
+    <div class="site-description" itemprop="description"></div>
+  </div>
+
+  
+  <nav class="site-state">
+    
+    <div class="site-state-item site-state-posts">
+      <a href="/archives/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">文章</span>
+      </a>
+    </div>
+    
+
+    
+
+    
+  </nav>
+  
+
+  
+
+  
+</div>
+    </div>
+
+  </div>
+</aside>
+
+    <div class="flex-main">
+
+      <main>
+        
+        <div class="sub-menu-wrap">
+          
+        </div>
+        
+        <div id="content" class="content">
+          <div id="posts" class="posts-expand">
+  
+
+<article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <div class="post-block">
+
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/27/markdown/" />
+    <meta itemprop="dateCreated datePublished" content="2020-02-27T03:28:43+08:00" />
+    <meta itemprop="dateModified" content="2020-02-27T03:49:27+08:00" />
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xiao rui" />
+      <meta itemprop="description" content="" />
+      <meta itemprop="image" content="https://s2.ax1x.com/2020/02/26/3adEyq.jpg" />
+    </span>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xr&#39;blog" />
+    </span>
+
+    
+
+    <header class="post-header">
+
+      
+      <h1 class="post-title" itemprop="name headline">
+        
+        markdown
+        
+      </h1>
+      
+
+      <div class="post-meta">
+
+  
+  
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="far fa-calendar"></i>
+    </span>
+    <span class="post-meta-item-text">發表於</span>
+    <time title="創建時間：2020-02-27 03:28:43">2020-02-27</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+</div>
+
+    </header>
+
+    <div class="post-body" itemprop="articleBody">
+      
+      <p>[TOC]</p>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>#是标题，随#号的多少逐级递增</p>
+<h2 id="段落格式"><a href="#段落格式" class="headerlink" title="段落格式"></a>段落格式</h2><h4 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h4><ul>
+<li>没有任何修饰就是普通的段落文字</li>
+<li><em><em>或_包裹的字段是斜体(\</em>包裹)</em></li>
+<li><em>*或_包裹的字段是斜体(_包裹)</em></li>
+<li><strong>两个*或_包裹的字段是粗体(*包裹)</strong></li>
+<li><strong>两个*或_包裹的字段是粗体(_包裹)</strong></li>
+<li><strong><em>上述两可以搭配使用</em></strong><a id="more"></a>
+
+
+</li>
+</ul>
+<h4 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h4><hr>
+<ul>
+<li><strong>三个以上</strong>的*或_或- 是分割线</li>
+</ul>
+<hr>
+<h4 id="线条"><a href="#线条" class="headerlink" title="线条"></a>线条</h4><ul>
+<li><p>被两个波浪线包裹的是<del>删除线</del></p>
+</li>
+<li><p>被u标签包裹的是<u>下划线</u></p>
+</li>
+</ul>
+<h4 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h4><ul>
+<li><a href="脚注即对文本的补充">^TEST</a></li>
+</ul>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><ul>
+<li>星号(<strong>***)、加号(</strong>+<strong>)或是减号(</strong>-<strong>)作为列表标记 **记得加空格</strong></li>
+</ul>
+<h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><ol>
+<li>使用数字加点(.)来表示</li>
+<li>使用数字加点(.)来表示</li>
+<li>使用数字加点(.)来表示</li>
+</ol>
+<h4 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h4><ol>
+<li>在子列表中的选项加四个空格（按一下tab键即可）<ol>
+<li>在子列表中的选项加四个空格（按一下tab键即可)</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li>在子列表中的选项加四个空格（按一下tab键即可）<ul>
+<li>在子列表中的选项加四个空格（按一下tab键即可）</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>在子列表中的选项加四个空格（按一下tab键即可）<ul>
+<li>在子列表中的选项加四个空格（按一下tab键即可）</li>
+</ul>
+</li>
+</ol>
+<h2 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h2><blockquote>
+<p>&gt;号加空格 </p>
+</blockquote>
+<blockquote>
+<p>也可以嵌套</p>
+<blockquote>
+<p>嵌套</p>
+<blockquote>
+<p>嵌套</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<ul>
+<li><p>列表和区块可以混用</p>
+<blockquote>
+<p>混用</p>
+</blockquote>
+</li>
+<li><p>混用</p>
+</li>
+</ul>
+<blockquote>
+<ol>
+<li>混用</li>
+<li>混用</li>
+</ol>
+</blockquote>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h4 id="普通代码"><a href="#普通代码" class="headerlink" title="普通代码"></a>普通代码</h4><p><code>printf(&quot;用反引号包裹起来&quot;)</code></p>
+<h4 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h4><pre><code class="python"><span class="function"><span class="keyword">def</span> <span class="title">test</span><span class="params">()</span>:</span>
+    print(<span class="string">"用三个反引号包裹并且可以选择语言"</span>)
+</code></pre>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><ol>
+<li><p><a href="https://www.baidu.com"><a href="这里填地址">这里填链接名</a></a></p>
+</li>
+<li><p>直接用尖括号起来<a href="https://www.baidu.com">https://www.baidu.com</a></p>
+</li>
+<li><blockquote>
+<p>[用变量作为地址][1]</p>
+<p>写法：用变量作为地址[1]</p>
+<p>[1]: <a href="https://www.baidu.com">https://www.baidu.com</a></p>
+</blockquote>
+</li>
+</ol>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>链接写法前面加感叹号</p>
+<p>推荐使用==<strong>图床</strong>==</p>
+<p><a href="https://s2.ax1x.com/2020/02/26/3adEyq.jpg"><img src="https://s2.ax1x.com/2020/02/26/3adEyq.th.jpg" alt="3adEyq.th.jpg"></a></p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>用竖线分割</p>
+<blockquote>
+<p>|表头|表头|</p>
+<p>|内容|内容|</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>内容</td>
+<td>内容</td>
+</tr>
+</tbody></table>
+<p>可以独加一行用来设定对齐方式**通过-和:组合的方式</p>
+<p>|左对齐|居中|右对齐|<br>|:—|:—:|–:|<br>|test|test|test|</p>
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="center">居中</th>
+<th align="right">右对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">test</td>
+<td align="center">test</td>
+<td align="right">test</td>
+</tr>
+</tbody></table>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ol>
+<li>支持数学公式，<a href="https://blog.csdn.net/baidu_38060633/article/details/79183905">详情百度</a></li>
+<li>支持html</li>
+<li>支持表情包🐎</li>
+<li>还有高亮等==key==</li>
+</ol>
+      
+    </div>
+
+    
+    
+
+
+<div>
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>博主： </strong>
+      xiao rui
+    </li>
+    <li class="post-copyright-link">
+      <strong>文章連結：</strong>
+      <a href="http://yoursite.com/2020/02/27/markdown/" title="markdown">http://yoursite.com/2020/02/27/markdown/</a>    </li>
+    <li class="post-copyright-license">
+      <strong>版權聲明： </strong>
+      本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-creative-commons"></i>BY-NC-SA</a> 許可協議。轉載請註明出處！    </li>
+  </ul>
+</div>
+
+    
+
+    
+    <footer class="post-footer">
+      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/27/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i>
+      Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>    </footer>
+    
+  </div>
+</article>
+</div>
+        </div>
+        
+
+
+      </main>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fas fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xiao rui</span>
+</div>
+
+<div class="powered-by">
+  由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 強力驅動 v4.2.0
+</div>
+
+<span class="post-meta-divider">|</span>
+
+<div class="theme-info">
+  主題 – <a href="https://github.com/JiangTJ/hexo-theme-cake" class="theme-link" rel="noopener" target="_blank">Cake</a> v1.6.0
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+
+  
+<script src="/js/next-boot.js?v=1.6.0.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js" crossorigin="anonymous"></script><script>lozad('[data-src]').observe();</script><script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js" crossorigin="anonymous"></script><script>mediumZoom('.post-body img:not([data-zoomable="false"]), [data-zoomable]:not([data-zoomable="false"])');</script>
+</body>
+
+</html>
